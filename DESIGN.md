@@ -118,29 +118,26 @@
 
 ### Spacing & Sizing
 
+**Spacing rhythm: 8px base (Exaggerated Minimalism)**
+
 ```css
-/* Spacing scale (4px base) */
---space-0: 0;
---space-1: 0.25rem;  /* 4px */
---space-2: 0.5rem;   /* 8px */
---space-3: 0.75rem;  /* 12px */
---space-4: 1rem;     /* 16px */
---space-5: 1.25rem;  /* 20px */
---space-6: 1.5rem;   /* 24px */
---space-8: 2rem;     /* 32px */
---space-10: 2.5rem;  /* 40px */
---space-12: 3rem;    /* 48px */
---space-16: 4rem;    /* 64px */
---space-20: 5rem;    /* 80px */
---space-24: 6rem;    /* 96px */
+--space-1: 0.5rem;   /* 8px */
+--space-2: 1rem;     /* 16px */
+--space-3: 1.5rem;   /* 24px */
+--space-4: 2rem;     /* 32px */
+--space-5: 2.5rem;   /* 40px */
+--space-6: 3rem;     /* 48px */
+--space-8: 4rem;     /* 64px */
+--space-10: 5rem;    /* 80px */
+--space-12: 6rem;    /* 96px */
+
+/* Section vertical gaps */
+--section-gap: clamp(4rem, 8vw, 8rem);
 
 /* Container */
---container-sm: 640px;
---container-md: 768px;
---container-lg: 1024px;
---container-xl: 1280px;
---container-2xl: 1536px;
---container-prose: 70ch;  /* Lebar untuk readability artikel */
+--container-max: 1280px;
+--container-padding: 1.5rem;
+--container-prose: 70ch;
 ```
 
 ### Radius (Border Radius)
@@ -156,17 +153,24 @@
 
 *Prinsip: News website = minimal rounded. 4px max untuk card. Square look = kredibel.*
 
-### Shadow (Elevation)
+### Shadow (Elevation) — Exaggerated Minimalism
+
+**Max shadow: 0 2px 8px rgba(0,0,0,0.08).** No shadows heavier than this.
 
 ```css
 --shadow-xs: 0 1px 2px rgba(24,24,27,0.04);
 --shadow-sm: 0 1px 3px rgba(24,24,27,0.06);
---shadow-md: 0 4px 6px rgba(24,24,27,0.06);
---shadow-lg: 0 10px 15px rgba(24,24,27,0.08);
---shadow-xl: 0 20px 25px rgba(24,24,27,0.1);
+--shadow-md: 0 2px 8px rgba(24,24,27,0.08);  /* Max — jangan lebih */
 ```
 
-### Motion (Animation)
+### Motion (Animation) — Exaggerated Minimalism
+
+**Prinsip:**
+- Entry: fade + translateY(16px → 0), ease-out, 420ms, stagger 80ms antar item
+- UI feedback: ease-out, 200-300ms. Hanya animasi transform dan opacity.
+- Hover: color shift + shadow adjustment, 200ms
+- Button active: -1px translateY (BUKAN scale)
+- prefers-reduced-motion: semua animasi collapse ke instant
 
 ```css
 --ease-out: cubic-bezier(0, 0, 0.2, 1);
@@ -176,7 +180,11 @@
 --duration-fast: 150ms;
 --duration-base: 200ms;
 --duration-slow: 300ms;
---duration-slower: 500ms;
+
+/* Entry animation */
+--entry-duration: 420ms;
+--entry-stagger: 80ms;
+--entry-translate: 16px;
 ```
 
 ### Z-Index Scale
@@ -207,24 +215,28 @@
 
 ---
 
-## 🎨 Design Direction (Ringkasan) — Medium-inspired
+## 🎨 Design Direction — Exaggerated Minimalism
 
-**Style/Vibe**: Clean, minimal, typography-first — Medium-style
+**Style/Vibe**: Exaggerated Minimalism — bold contrast, extreme whitespace, typography-first, satu accent color
 
-**Color mood**: Neutral white + green accent
+**Three Dials:**
+- **DESIGN_VARIANCE: 2** — Terstruktur, predictable layout
+- **MOTION_INTENSITY: 4** — Subtle, ease-out, 420ms entry
+- **VISUAL_DENSITY: 3** — Airy, 40-60% whitespace
 
-**Typography mood**: Single serif (Source Serif 4) untuk semua content + Inter untuk UI
+**Color mood**: Pure white + near-black + green accent (single accent lock)
 
-**Layout pattern**: Linear, max-width ~1040px, zero card decoration, white space lega
+**Typography mood**: Source Serif 4 (serif) untuk content + Inter (sans) untuk UI
+
+**Layout pattern**: Max-width 1280px, 8px spacing base, section gap clamp(4rem, 8vw, 8rem)
 
 **Key visual decisions:**
-1. Satu serif (Source Serif 4) untuk headlines + body — seperti Medium
+1. Satu serif (Source Serif 4) untuk headlines + body
 2. Sans (Inter) hanya untuk UI, navigation, metadata
-3. **Green accent (#1A8917)** — single accent, lock, jangan tambah warna lain
-4. Zero shadow, zero border-radius besar, zero card bg — flat design
-5. Border hanya hairline 1px `#F0F0F0`
-6. Max-width artikel ~720px (optimal readability), homepage ~1040px
-7. Inspired by medium.com — typography-first, content is king
+3. **Green accent (#1A8917)** — single accent lock
+4. Shadow max: 0 2px 8px rgba(0,0,0,0.08)
+5. Entry animation: fade + translateY, 420ms, stagger 80ms
+6. Max-width: 1280px container, 70ch article body
 
 ---
 

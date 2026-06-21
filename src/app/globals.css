@@ -136,4 +136,8 @@
   html {
     @apply font-display;
   }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
 }

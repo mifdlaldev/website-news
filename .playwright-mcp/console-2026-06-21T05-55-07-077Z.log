@@ -430,3 +430,15 @@ https://supabase.com/dashboard/project/_/settings/api
 [ 6831053ms] [LOG] [Fast Refresh] done in 816ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
 [ 6844549ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
 [ 6844609ms] [LOG] [Fast Refresh] done in 160ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 6938800ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=q4pt6P31GW5tvk5h7c3Zx' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_client_1xrw9m3._.js:13422
+[ 6939803ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=q4pt6P31GW5tvk5h7c3Zx' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_client_1xrw9m3._.js:13422
+[ 6940804ms] [ERROR] WebSocket connection to 'ws://localhost:3000/_next/webpack-hmr?id=q4pt6P31GW5tvk5h7c3Zx' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_client_1xrw9m3._.js:13422
+[ 6942524ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 6945211ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 6945390ms] [LOG] [HMR] connected @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 7072345ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 7073570ms] [LOG] [Fast Refresh] done in 1109ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 7080376ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 7080751ms] [LOG] [Fast Refresh] done in 193ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 7088509ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 7088716ms] [LOG] [Fast Refresh] done in 261ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477

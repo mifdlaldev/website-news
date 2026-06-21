@@ -15,7 +15,7 @@ const NAV_LINKS = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-fixed w-full border-b border-border bg-background">
+    <header className="sticky top-0 z-fixed w-full border-b border-border bg-background isolate">
       <div className="mx-auto flex h-14 max-w-[1280px] items-center justify-between px-6">
         {/* Mobile hamburger */}
         <Sheet>

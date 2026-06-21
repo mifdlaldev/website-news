@@ -35,7 +35,7 @@ export function FeaturedHero({
               <img
                 src={coverImage}
                 alt=""
-                className="aspect-[4/3] w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.02] md:aspect-[3/2]"
+                className="aspect-[4/3] w-full object-cover transition-[filter] duration-300 ease-out group-hover:brightness-95 md:aspect-[3/2]"
                 fetchPriority="high"
               />
             </div>

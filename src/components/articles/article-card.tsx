@@ -35,7 +35,7 @@ export function ArticleCard({
           <img
             src={coverImage}
             alt=""
-            className="aspect-[16/9] w-full object-cover transition-transform duration-300 ease-out group-hover:scale-[1.02]"
+            className="aspect-[16/9] w-full object-cover transition-[filter] duration-300 ease-out group-hover:brightness-95"
             loading="lazy"
           />
         </Link>

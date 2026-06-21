@@ -5,6 +5,7 @@ import {
   Inter,
   JetBrains_Mono,
 } from "next/font/google";
+import { Header } from "@/components/layout/header";
 import "./globals.css";
 
 const playfairDisplay = Playfair_Display({
@@ -46,7 +47,10 @@ export default function RootLayout({
       lang="id"
       className={`${playfairDisplay.variable} ${sourceSerif4.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-body">{children}</body>
+      <body className="min-h-full flex flex-col font-body">
+        <Header />
+        <main className="flex-1">{children}</main>
+      </body>
     </html>
   );
 }

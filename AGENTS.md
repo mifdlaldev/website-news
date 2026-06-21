@@ -128,6 +128,15 @@ supabase CLI
 - ✅ PostHog **tidak dipakai** — cukup GA4 + Clarity + Sentry
 - ✅ Cloudflare Tunnel untuk production nanti, skip di development
 
+**WAJIB LOAD SKILLS SEBELUM MEMBUAT KOMPONEN FRONTEND:**
+Sebelum menulis komponen frontend apa pun, WAJIB load skills berikut:
+1. `design-taste-frontend` — untuk design read, three dials, color strategy, layout discipline
+2. `impeccable` — untuk polish, audit, anti-slop rules, typography control
+3. `shadcn` — untuk memeriksa API komponen yang benar sebelum dipakai
+
+Proses WAJIB: Design Read → Three Dials → Color Strategy → Komponen Selection → Implementasi → Audit.
+**JANGAN PERNAH** menulis komponen frontend tanpa melalui proses ini. Violation = AI HALU.
+
 ---
 
 ## 🔒 Security

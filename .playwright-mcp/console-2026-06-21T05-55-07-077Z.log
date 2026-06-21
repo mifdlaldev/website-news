@@ -59,3 +59,6 @@
 [  768281ms] [LOG] [Fast Refresh] done in 119ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
 [  783380ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
 [  783405ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[  899886ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[  900090ms] [LOG] [Fast Refresh] done in 230ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[  903054ms] [WARNING] The resource http://localhost:3000/next.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0

@@ -1,9 +1,11 @@
-import { createClient } from "@/lib/supabase/server";
+import { createPublicClient } from "@/lib/supabase/public";
 import { FeaturedHero } from "@/components/articles/featured-hero";
 import { ArticleCard } from "@/components/articles/article-card";
 
+export const revalidate = 60;
+
 export default async function HomePage() {
-  const supabase = await createClient();
+  const supabase = createPublicClient();
 
   // Featured article (latest published with featured=true)
   const { data: featuredArticle } = await supabase

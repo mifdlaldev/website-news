@@ -128,14 +128,87 @@ supabase CLI
 - ✅ PostHog **tidak dipakai** — cukup GA4 + Clarity + Sentry
 - ✅ Cloudflare Tunnel untuk production nanti, skip di development
 
-**WAJIB LOAD SKILLS SEBELUM MEMBUAT KOMPONEN FRONTEND:**
-Sebelum menulis komponen frontend apa pun, WAJIB load skills berikut:
-1. `design-taste-frontend` — untuk design read, three dials, color strategy, layout discipline
-2. `impeccable` — untuk polish, audit, anti-slop rules, typography control
-3. `shadcn` — untuk memeriksa API komponen yang benar sebelum dipakai
+**WAJIB LOAD SKILLS SEBELUM MEMBUAT KOMPONEN FRONTEND — HARAM DILEWATI:**
 
-Proses WAJIB: Design Read → Three Dials → Color Strategy → Komponen Selection → Implementasi → Audit.
-**JANGAN PERNAH** menulis komponen frontend tanpa melalui proses ini. Violation = AI HALU.
+Setiap kali akan menulis komponen frontend (header, card, button, layout, form, sidebar, dll),
+WAJIB load SEMUA skills berikut TERLEBIH DAHULU:
+
+```
+1. design-taste-frontend   — design read, three dials, color strategy, anti-slop
+2. impeccable              — polish, audit, anti-slop rules, typography, color calibration
+3. shadcn                  — periksa API komponen, docs, customization sebelum pakai
+4. frontend-design         — distinctive UI, creative direction, bold aesthetic
+5. ui-ux-pro-max           — color palettes, font pairings, UX guidelines, style system
+6. ui-ux-designer          — design system, accessibility, user-centered design
+7. emil-design-eng         — animation, micro-interactions, polish, transform mastery
+8. web-design-guidelines   — WCAG compliance, interface audit
+```
+
+**PROSES WAJIB SETIAP KALI MEMBUAT KOMPONEN FRONTEND (HARAM DILEWATI):**
+
+```
+STEP 1 — DESIGN READ (dari design-taste-frontend Section 0)
+  Output satu baris: "Reading this as: <page kind> for <audience>, with <vibe> language"
+  Contoh: "Reading this as: editorial news for Indonesian readers, Medium-style clean minimal"
+
+STEP 2 — THREE DIALS (dari design-taste-frontend Section 1)
+  Tentukan: DESIGN_VARIANCE (1-10), MOTION_INTENSITY (1-10), VISUAL_DENSITY (1-10)
+  Wajib disesuaikan dengan design read.
+
+STEP 3 — COLOR STRATEGY (dari design-taste-frontend Section 4.2 + impeccable Color)
+  - Max 1 accent color. Color Consistency Lock.
+  - Gunakan OKLCH. Pure monochrome + satu accent pop.
+  - Cek contrast: body ≥ 4.5:1, large text ≥ 3:1 (WCAG AA).
+  - Tidak ada pure #000 atau pure #fff.
+
+STEP 4 — TYPOGRAPHY (dari design-taste-frontend Section 4.1 + impeccable Typography)
+  - Cap font-family max 3 (display + body + optional mono).
+  - Body line length 65-75ch.
+  - Pair on contrast axis (serif + sans).
+  - Tidak boleh Inter sebagai default sans (kecuali user minta neutral).
+
+STEP 5 — COMPONENT SELECTION (dari shadcn workflow)
+  - Cek komponen yang sudah terinstall: ls src/components/ui/
+  - Jalankan: npx shadcn@latest docs <component> — baca docs dulu sebelum pakai.
+  - Cek base-ui vs radix: components.json → field "base".
+  - JANGAN gunakan asChild untuk base-ui (pakai render prop).
+  - Customize komponen, JANGAN pakai default theme shadcn (haram).
+
+STEP 6 — ANTI-SLOP CHECK SAAT IMPLEMENTASI (dari design-taste-frontend Section 9 + impeccable Absolute Bans)
+  - ❌ Emoji sebagai icon → pakai Lucide SVG
+  - ❌ Gradient text (background-clip: text)
+  - ❌ Identical card grids (icon + heading + text)
+  - ❌ Eyebrow di SETIAP section (max 1 per 3)
+  - ❌ Pure black/white
+  - ❌ as any, @ts-ignore
+  - ❌ Inline style (style={{}})
+  - ❌ z-index: 9999
+  - ❌ Nested button (button di dalam button)
+  - ❌ scale(0) untuk entry animation → pakai scale(0.95) + opacity(0)
+  - ❌ ease-in untuk UI → pakai ease-out
+  - ❌ transition: all → spesifik: transition: transform 200ms ease-out
+  - ❌ border: 1px + shadow dengan blur ≥ 16px di elemen sama
+  - ❌ border-radius ≥ 32px untuk card (max 16px)
+
+STEP 7 — ANIMASI & INTERAKSI (dari emil-design-eng)
+  - Button :active → scale(0.97)
+  - Transform-origin untuk popover → ikut trigger, bukan center
+  - Durasi UI: 150-300ms (bukan 400ms+)
+  - prefers-reduced-motion: WAJIB di-honor
+  - Hover animation: gate dengan @media (hover: hover) and (pointer: fine)
+
+STEP 8 — AUDIT (dari impeccable + emil-design-eng + ui-ux-pro-max)
+  - Cek contrast tiap CTA button
+  - Cek touch target ≥ 44px
+  - Cek heading hierarchy (H1 → H2 → H3)
+  - Cek loading state, empty state, error state ada
+  - Cek semantic HTML (nav, main, article, section)
+  - Cek prefers-reduced-motion
+  - Cek skip link keyboard
+  - Cek form label (bukan placeholder as label)
+```
+
+**VIOLATION:** Jika salah satu step di atas dilewati, itu = AI HALU. Wajib ulang dari STEP 1.
 
 ---
 

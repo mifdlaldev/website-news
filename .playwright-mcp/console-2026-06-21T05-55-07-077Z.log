@@ -198,3 +198,50 @@ TypeError: Cannot convert undefined or null to object
 [ 2146700ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
 [ 2146947ms] [LOG] [Fast Refresh] done in 365ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
 [ 2149391ms] [WARNING] The resource http://localhost:3000/next.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[ 2602107ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2602165ms] [LOG] [Fast Refresh] done in 158ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2618463ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2619300ms] [LOG] [Fast Refresh] done in 316ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2619741ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2619929ms] [LOG] [Fast Refresh] done in 289ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2621082ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2621094ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2621453ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2621460ms] [LOG] [Fast Refresh] done in 107ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2621913ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2621927ms] [LOG] [Fast Refresh] done in 115ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2622442ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2622474ms] [LOG] [Fast Refresh] done in 132ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2626075ms] [WARNING] The resource http://localhost:3000/next.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[ 2654171ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2654246ms] [LOG] [Fast Refresh] done in 175ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2668130ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2671479ms] [WARNING] The resource http://localhost:3000/next.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[ 2674921ms] [LOG] [Fast Refresh] done in 3391ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2676643ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2676707ms] [LOG] [Fast Refresh] done in 165ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2677233ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2677244ms] [LOG] [Fast Refresh] done in 112ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2677368ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2677390ms] [LOG] [Fast Refresh] done in 123ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2677870ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2677913ms] [LOG] [Fast Refresh] done in 144ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2678035ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2678086ms] [WARNING] The resource http://localhost:3000/next.svg was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3000/:0
+[ 2678123ms] [LOG] [Fast Refresh] done in 189ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2678245ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2678394ms] [LOG] [Fast Refresh] done in 250ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2679038ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2679062ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2679210ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2679288ms] [LOG] [Fast Refresh] done in 178ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2679426ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2679466ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2679910ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2679982ms] [LOG] [Fast Refresh] done in 172ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2681312ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2681409ms] [LOG] [Fast Refresh] done in 199ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2692184ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2692223ms] [LOG] [Fast Refresh] done in 139ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2692893ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477
+[ 2692935ms] [LOG] [Fast Refresh] done in 142ms @ http://localhost:3000/_next/static/chunks/0ok1_next_dist_1a0o6-k._.js:2477

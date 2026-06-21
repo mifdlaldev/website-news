@@ -1,22 +1,11 @@
 import type { Metadata } from "next";
-import {
-  Playfair_Display,
-  Source_Serif_4,
-  Inter,
-  JetBrains_Mono,
-} from "next/font/google";
+import { Source_Serif_4, Inter, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/layout/header";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-});
-
 const sourceSerif4 = Source_Serif_4({
   subsets: ["latin"],
-  variable: "--font-body",
+  variable: "--font-display",
   display: "swap",
 });
 
@@ -45,7 +34,7 @@ export default function RootLayout({
   return (
     <html
       lang="id"
-      className={`${playfairDisplay.variable} ${sourceSerif4.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+      className={`${sourceSerif4.variable} ${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-body">
         <Header />

@@ -32,63 +32,61 @@
 
 ## 🔍 Sintesis Riset
 
-### Warna (Color System)
+### Warna (Color System) — Medium-inspired
 
 **Base palette:**
 
 ```css
 /* Brand */
---color-primary: #1E3A5F;        /* Dark navy — autoritatif, terpercaya */
---color-primary-hover: #2B4C7E;
---color-primary-active: #15294A;
---color-accent: #B91C1C;         /* Red untuk breaking news, CTAs */
+--color-primary: #1A8917;        /* Green — accent utama (Medium-inspired) */
+--color-primary-hover: #15803D;
+--color-primary-active: #166534;
 
 /* Neutrals */
---color-bg: #FAFAF8;             /* Warm off-white — newsprint feel */
---color-bg-elevated: #FFFFFF;    /* Card, modal */
---color-fg: #18181B;             /* Near-black text */
---color-fg-muted: #71717A;       /* Secondary text, metadata */
---color-border: #E4E4E7;         /* Border ringan */
---color-border-strong: #D4D4D8;
+--color-bg: #FFFFFF;             /* Pure white — Medium-style clean */
+--color-bg-muted: #FAFAFA;       /* Hover state, subtle section */
+--color-fg: #141516;             /* Near-black text */
+--color-fg-muted: #6B6B6B;       /* Secondary text, metadata */
+--color-border: #F0F0F0;         /* Hairline border */
+--color-border-strong: #E0E0E0;
 
 /* Semantic */
---color-success: #16A34A;
+--color-success: #1A8917;
 --color-warning: #D97706;
 --color-error: #DC2626;
 --color-info: #2563EB;
 ```
 
 **Constraint:**
-- Maximum 3 warna utama (navy + neutral + red accent)
-- ✅ Pure black (#000) → **OFF-LIMITS** (pakai #18181B)
-- ✅ Pure white (#fff) → **OFF-LIMITS** (pakai #FAFAF8)
-- Contrast ratio minimum **4.5:1** untuk body text (WCAG AA)
-- Contrast ratio minimum **3:1** untuk UI components (WCAG AA)
+- Satu accent color: **green** (lock, jangan tambah warna lain)
+- ✅ Contrast ratio minimum **4.5:1** untuk body text (WCAG AA)
+- ✅ Contrast ratio minimum **3:1** untuk UI components (WCAG AA)
+- ❌ No navy, no red, no warm off-white
 
 ### Tipografi (Typography)
 
 ```css
-/* Display (Hero, H1) — Playfair Display */
---font-display: 'Playfair Display', Georgia, serif;
---font-size-display-1: clamp(2.5rem, 5vw, 4rem);
+/* Display + Headings (H1-H4) — Source Serif 4 (Medium-style single serif) */
+--font-display: 'Source Serif 4', Georgia, serif;
+--font-size-display-1: clamp(2.5rem, 5vw, 3.5rem);
 --font-weight-display: 700;
---line-height-display: 1.1;
---letter-spacing-display: -0.02em;
+--line-height-display: 1.15;
+--letter-spacing-display: -0.01em;
 
-/* Heading (H2, H3, H4) — Playfair Display */
---font-heading: 'Playfair Display', Georgia, serif;
---font-size-h2: clamp(2rem, 4vw, 3rem);
---font-size-h3: clamp(1.5rem, 3vw, 2rem);
---font-size-h4: clamp(1.25rem, 2vw, 1.5rem);
+/* Heading (H2, H3, H4) — Source Serif 4 */
+--font-heading: 'Source Serif 4', Georgia, serif;
+--font-size-h2: clamp(1.75rem, 3.5vw, 2.5rem);
+--font-size-h3: clamp(1.35rem, 2.5vw, 1.75rem);
+--font-size-h4: clamp(1.15rem, 2vw, 1.35rem);
 --font-weight-heading: 600;
---line-height-heading: 1.25;
+--line-height-heading: 1.3;
 
-/* Body — Source Serif 4 */
+/* Body — Source Serif 4 (sama dengan headlines) */
 --font-body: 'Source Serif 4', Georgia, serif;
---font-size-body: 17px;          /* Body besar untuk readability */
+--font-size-body: 17px;          /* Medium: 17px untuk readability */
 --font-size-body-sm: 15px;
 --font-size-body-xs: 13px;
---line-height-body: 1.7;         /* Loose untuk long-form reading */
+--line-height-body: 1.7;         /* Medium: 1.7 line-height */
 --line-height-body-tight: 1.4;
 
 /* UI / Navigation — Inter */
@@ -107,15 +105,16 @@
 - ✅ `next/font` — self-hosted Google Fonts (zero CLS, zero external request)
 - ✅ `font-display: swap` via next/font (built-in)
 - ✅ Subset Latin (cukup untuk Bahasa Indonesia + English)
-- ✅ Variable fonts untuk Playfair Display, Source Serif 4, Inter, JetBrains Mono
+- ✅ Variable fonts untuk Source Serif 4, Inter, JetBrains Mono
 
 **Font stack rationale:**
 | Fungsi | Font | Alasan |
 |---|---|---|
-| Headlines (H1-H4) | **Playfair Display** | High-contrast serif, premium editorial feel setara NYT/Economist |
-| Body artikel | **Source Serif 4** | Optikal sizing untuk screen, nyaman dibaca ribuan kata |
-| UI / Nav / Cards | **Inter** | Font UI paling terbukti, x-height tinggi, legible di semua ukuran |
-| Meta / Code / Data | **JetBrains Mono** | Untuk byline, tanggal, metadata, code — bersih dan teknis |
+| Headlines + Body | **Source Serif 4** | Satu serif untuk semua content — Medium juga pakai 1 serif (Charter) untuk title + body |
+| UI / Nav / Cards | **Inter** | Font UI paling terbukti, netral, clean — cocok Medium-style |
+| Meta / Code / Data | **JetBrains Mono** | Untuk metadata, code — bersih dan teknis |
+
+**Playfair Display dihapus** karena terlalu high-fashion, tidak cocok untuk news yang kalem (Medium-style).
 
 ### Spacing & Sizing
 
@@ -208,22 +207,24 @@
 
 ---
 
-## 🎨 Design Direction (Ringkasan)
+## 🎨 Design Direction (Ringkasan) — Medium-inspired
 
-**Style/Vibe**: Editorial Premium — clean, typography-first, authoritative
+**Style/Vibe**: Clean, minimal, typography-first — Medium-style
 
-**Color mood**: Neutral warm + navy + red accent
+**Color mood**: Neutral white + green accent
 
-**Typography mood**: Editorial (serif headlines) + Clean modern (sans UI)
+**Typography mood**: Single serif (Source Serif 4) untuk semua content + Inter untuk UI
 
-**Layout pattern**: Magazine grid — hierarchical cards, single-column artikel, sidebar untuk trending/related
+**Layout pattern**: Linear, max-width ~1040px, zero card decoration, white space lega
 
 **Key visual decisions:**
-1. Serif untuk semua content text (headlines + body) — kredibilitas
-2. Sans hanya untuk UI, navigation, metadata — fungsi
-3. Red accent hanya untuk breaking news badge, CTA, link hover — hemat
-4. Off-white background — newsprint feel, kurangi eye strain
-5. Minimal rounded corners — serius, tidak "main-main"
+1. Satu serif (Source Serif 4) untuk headlines + body — seperti Medium
+2. Sans (Inter) hanya untuk UI, navigation, metadata
+3. **Green accent (#1A8917)** — single accent, lock, jangan tambah warna lain
+4. Zero shadow, zero border-radius besar, zero card bg — flat design
+5. Border hanya hairline 1px `#F0F0F0`
+6. Max-width artikel ~720px (optimal readability), homepage ~1040px
+7. Inspired by medium.com — typography-first, content is king
 
 ---
 
